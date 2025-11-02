@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>page one</title>
+</head>
+<body>
+    <section>
+        
+        <div class="class">    </div>
+
+            <header>
+                <a href="#"><img src="./Dc/logo.png" alt="logo" class="logo"></a>
+                <div class="toggle" onclick="toggleMenu();" ></div>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's Mew</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Its not just Coffee <br> It's <span>Starbucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente odio tenetur saepe deleniti consequatur iusto aperiam fugit dolorum reiciendis laudantium, rem temporibus commodi nobis error, harum expedita earum dignissimos aliquam reprehenderit quos. Cumque fuga dolores voluptatem, magni quidem quia minus neque sit voluptatibus nobis assumenda hic fugit, nemo placeat. Doloremque?</p>
+                <a href="#" class="A">learn more </a>
+            </div>
+            <div class="imgBox">
+                <img src="./Dc/img1.png" class="starbucks">
+                
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./Dc/thumb1.png" class="top" onclick="imgslider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="./Dc/thumb2.png" class="top" onclick="imgslider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./Dc/thumb3.png" class="top" onclick="imgslider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="./Dc/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="./Dc/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="./Dc/instagram.png" alt=""></a></li>
+            
+        </ul>
+    </section>
+    <script src="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').scr = anything;
+        }
+        function changeCircleColor(Color){
+            const circle  = document.querySelector('.class');
+            circle.style.background = Color;
+        }
+        function toggleMenu(){
+            var menuToggle=document.querySelector('.toggle');
+            menuToggle.classlist.toggle('active')
+        }
+
+
+    </script>
+
+
+</body>
+</html>
